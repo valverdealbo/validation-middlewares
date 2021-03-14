@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/valverdealbo/validation-middlewares/compare/v1.0.2...v1.0.3) (2021-03-14)
+
+
+### Bug Fixes
+
+* upgrade @valbo/http-errors from 1.0.2 to 1.0.3 ([191fc52](https://github.com/valverdealbo/validation-middlewares/commit/191fc52bd1261c94f428fe3176d36d91879221d4))
+
 ## [1.0.2](https://github.com/valverdealbo/validation-middlewares/compare/v1.0.1...v1.0.2) (2021-02-19)
 
 

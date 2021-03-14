@@ -1,6 +1,6 @@
 {
   "name": "@valbo/validation-middlewares",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express middlewares to validate JSON request bodies",
   "keywords": [
     "express",
