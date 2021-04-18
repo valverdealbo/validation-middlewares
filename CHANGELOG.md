@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/valverdealbo/validation-middlewares/compare/v1.0.3...v1.0.4) (2021-04-18)
+
+
+### Bug Fixes
+
+* update dependencies and tools configurations ([d41796e](https://github.com/valverdealbo/validation-middlewares/commit/d41796e208c9c2ecf76a067f864a15d42803326f))
+
 ## [1.0.3](https://github.com/valverdealbo/validation-middlewares/compare/v1.0.2...v1.0.3) (2021-03-14)
 
 
