@@ -3,7 +3,7 @@ import Ajv from 'ajv';
 import express, { json, ErrorRequestHandler, RequestHandler } from 'express';
 import supertest from 'supertest';
 import { InternalServerErrorError } from '@valbo/http-errors';
-import { validateSchema, createParseJsonBodyMiddleware, configureValidateMiddleware } from '.';
+import { validateSchema, createParseJsonBodyMiddleware, configureValidateMiddleware } from '../src';
 
 const schema = {
   type: 'object',
@@ -30,16 +30,11 @@ const sendEmpty: RequestHandler = (request, response) => {
 
 describe('validateSchema()', () => {
   test('should return when the data is valid', () => {
-    validateSchema(ajv, 'schema', { name: 'bob' });
+    expect(() => validateSchema(ajv, 'schema', { name: 'bob' })).not.toThrow();
   });
 
   test('should throw a bad request error when the data is invalid', () => {
-    expect.assertions(1);
-    try {
-      validateSchema(ajv, 'schema', { username: 'bob' });
-    } catch (error) {
-      expect(error.status).toBe(400);
-    }
+    expect(() => validateSchema(ajv, 'schema', { username: 'bob' })).toThrow();
   });
 });
 
