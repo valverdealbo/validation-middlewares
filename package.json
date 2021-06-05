@@ -52,7 +52,7 @@
     "@types/body-parser": "1.x",
     "@types/express": "4.x",
     "@valbo/http-errors": "1.x",
-    "ajv": "7.x - 8.x",
+    "ajv": "8.4.0",
     "express": "4.x"
   },
   "scripts": {
